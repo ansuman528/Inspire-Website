@@ -2,7 +2,6 @@
 
 include('partials/connection.php');
 
-
 ?>
 
 <!DOCTYPE html>
@@ -12,110 +11,53 @@ include('partials/connection.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Login</title>
-    <link rel="icon" href="assets/img/abc.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Telivigala&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aleo&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex+Brush&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alike&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alike+Angular&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Article-Clean.css">
-    <link rel="stylesheet" href="assets/css/Article-List.css">
-    <link rel="stylesheet" href="assets/css/Bootstrap-4-Calendar-No-Custom-Code.css">
-    <link rel="stylesheet" href="assets/css/Bootstrap-Calendar.css">
-    <link rel="stylesheet" href="assets/css/Brands.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Features-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/iframe.css">
-    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="assets/css/Ludens---Contact-Info--Google-Map.css">
-    <link rel="stylesheet" href="assets/css/Map-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Powerful-Calendar.css">
-    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
-    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
-    <link rel="stylesheet" href="assets/css/Quote-Card-1.css">
-    <link rel="stylesheet" href="assets/css/Quote-Card.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Team-Grid.css">
-    <link rel="stylesheet" href="assets/css/WOWSlider-about-us-1.css">
-    <link rel="stylesheet" href="assets/css/WOWSlider-about-us-2.css">
-    <link rel="stylesheet" href="assets/css/WOWSlider-about-us.css">
+    <link rel="stylesheet" href="assets/css/login-style.css">
 </head>
 
 <body>
-    
-    <?php
 
-    include('partials/navbar.php');
+<div class="w3l-signinform">
+        <!-- container -->
+        <div class="wrapper">
+            <!-- main content -->
+            <div class="w3l-form-info">
+                <div class="w3_info">
+                    <h1>Welcome Back</h1>
+                    <p class="sub-para">Please Collect your credentials from President of the club</p>
+                    <h2>Log In</h2>
+                    <form action="partials/login_handler.php" method="POST">
+                        <div class="input-group">
+                            <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="email" name="email" placeholder="Email" required="">
+                        </div>
+                        <div class="input-group two-groop">
+                            <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                            <input type="password" name="password" placeholder="Password" required="">
+                        </div>
+                        <!-- <div class="form-row bottom">
+                            <div class="form-check">
+                                <input type="checkbox" id="remenber" name="remenber" value="remenber">
+                                <label for="remenber"> Remember me?</label>
+                            </div>
+                            <a href="#url" class="forgot">Forgot password?</a>
+                        </div> -->
+                        <button class="btn btn-primary btn-block" type="submit">Log In</button>
+                    </form>
+                
+                    <!-- <p class="account">Don't have an account? <a href="#register">Register</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-?>
-
-    <section class="login-dark">
+    <!-- <section classs="card">
         <form  action="partials/login_handler.php" method="POST">
-            <h2 class="visually-hidden">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
-            <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-            <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Log In</button></div>
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Log In</button>
         </form>
-    </section>
-
-
-
-
-    <?php
-
-include('partials/footer.php');
-
-?>
-
-
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="assets/js/Lightbox-Gallery.js"></script>
-    <script src="assets/js/Powerful-Calendar.js"></script>
-    <script src="assets/js/WOWSlider-about-us.js"></script>
+    </section> -->
 </body>
 
 </html>
