@@ -45,7 +45,7 @@ include('partials/connection.php');
                         <button class="btn btn-primary btn-block" type="submit">Log In</button>
                     </form>
                 
-                    <!-- <p class="account">Don't have an account? <a href="#register">Register</a></p> -->
+                    <p class="account">Don't have an account? <a href="registration.php">Register</a></p>
                 </div>
             </div>
         </div>
