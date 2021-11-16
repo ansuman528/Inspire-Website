@@ -152,7 +152,6 @@ include('partials/navbar.php') ;
                 </div>
             </div>
         </div>
-        <section class="map-clean"></section>
     </section>
 
 

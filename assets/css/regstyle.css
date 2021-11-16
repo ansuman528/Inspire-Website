@@ -51,9 +51,6 @@ html{
   border: solid 1px #cbc9c9;
 }
 
-input[type=radio] {
-  visibility: hidden;
-}
 
 form{
   margin: 0 30px;
@@ -108,7 +105,7 @@ hr{
   opacity: 0.3;
 }
 
-input[type=text],input[type=password]{
+input[type=text],input[type=password],input[type=email]{
   width: 200px; 
   height: 39px; 
   -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 

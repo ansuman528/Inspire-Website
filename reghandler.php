@@ -1,3 +1,6 @@
+<head>
+<meta http-equiv="refresh" content="5; URL=../inspire-website/login.php" />
+</head>
 <?php
     include ('partials\connection.php');
     if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -5,6 +8,7 @@
         $referal="ayushanitr";
         $email= $_POST['email'];
         $greferal= $_POST['referal'];
+        $name=$_POST['name'];
         $pass= $_POST['password'];
         $conn = new mysqli($servername, $username, $password, $database);
             // Check connection
@@ -25,14 +29,15 @@
                     ';
                 }
                 else{
-                    $sql = "INSERT INTO users (SL_NO,email_id,password)
-                    VALUES (SL_NO, '$email', '$pass')";
+                    $sql = "INSERT INTO users (SL_NO,email_id,password,name)
+                    VALUES (SL_NO, '$email', '$pass', '$name')";
                     if ($conn->query($sql) === TRUE) {
                         echo '
                         <script>
                         alert("You are successfully registered");
                     </script>
                         ';
+
                     } 
                     else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -51,5 +56,5 @@
     }
 ?>
 <br>
-<a style="" href="registration.php">signup</a><br>
-<a href="login.php">login</a>
+<span style="font-size: 2em;">Don't Refresh. redirecting to login in 5sec</span><br>
+<span>not redirect. click here</span><a style="" href="login.php">login</a><br>

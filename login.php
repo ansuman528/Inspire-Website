@@ -11,53 +11,62 @@ include('partials/connection.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Login</title>
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/login-style.css">
+    <link rel="stylesheet" href="../Inspire-website/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../Inspire-Website/assets/css/login-style.css">
 </head>
 
 <body>
 
-<div class="w3l-signinform">
-        <!-- container -->
-        <div class="wrapper">
-            <!-- main content -->
-            <div class="w3l-form-info">
-                <div class="w3_info">
-                    <h1>Welcome Back</h1>
-                    <p class="sub-para">Please Collect your credentials from President of the club</p>
-                    <h2>Log In</h2>
-                    <form action="partials/login_handler.php" method="POST">
-                        <div class="input-group">
-                            <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                            <input type="email" name="email" placeholder="Email" required="">
-                        </div>
-                        <div class="input-group two-groop">
-                            <span><i class="fa fa-key" aria-hidden="true"></i></span>
-                            <input type="password" name="password" placeholder="Password" required="">
-                        </div>
-                        <!-- <div class="form-row bottom">
-                            <div class="form-check">
-                                <input type="checkbox" id="remenber" name="remenber" value="remenber">
-                                <label for="remenber"> Remember me?</label>
-                            </div>
-                            <a href="#url" class="forgot">Forgot password?</a>
-                        </div> -->
-                        <button class="btn btn-primary btn-block" type="submit">Log In</button>
-                    </form>
-                
-                    <p class="account">Don't have an account? <a href="registration.php">Register</a></p>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="reghandler.php" method="POST">
+                    <h1>Create Account</h1>
+                    <span>Collect Your Referal from Club President</span>
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="text" name="referal" placeholder="Referal" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Password" />
+                    <button type="submit" name="submit">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="partials/login_handler.php" method="POST">
+                    <h1>Sign in</h1>
+                    <span>or use your account</span>
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- <section classs="card">
-        <form  action="partials/login_handler.php" method="POST">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <button type="submit">Log In</button>
-        </form>
-    </section> -->
 </body>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
 
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
 </html>
