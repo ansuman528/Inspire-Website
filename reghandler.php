@@ -57,4 +57,4 @@
 ?>
 <br>
 <span style="font-size: 2em;">Don't Refresh. redirecting to login in 5sec</span><br>
-<span>not redirect. click here</span><a style="" href="login.php">login</a><br>
+<span>not redirect. click here</span><a href="login.php">login</a><br>
