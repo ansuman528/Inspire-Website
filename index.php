@@ -98,7 +98,7 @@ include('partials/navbar.php') ;
 ?>
     <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false"
         data-bs-keyboard="false" id="carousel-1">
-        <div class="carousel-inner">
+        <div style="height: 90vh;" class="carousel-inner">
             <div class="carousel-item active"><img class="img-fluid w-100 d-block" src="assets/img/nit.jpg"
                     alt="Slide Image" height="650px"></div>
             <div class="carousel-item"><img class="img-fluid w-100 d-block" src="assets/img/inspire1.jpg"
