@@ -13,6 +13,12 @@ include('partials/connection.php');
     <title>Login</title>
     <link rel="stylesheet" href="../Inspire-website/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../Inspire-Website/assets/css/login-style.css">
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
 </head>
 
 <body>
