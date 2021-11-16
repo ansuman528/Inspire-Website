@@ -22,10 +22,10 @@ include('partials/connection.php');
                 <form action="reghandler.php" method="POST">
                     <h1>Create Account</h1>
                     <span>Collect Your Referal from Club President</span>
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="text" name="referal" placeholder="Referal" />
-                    <input type="email" name="email" placeholder="Email" />
-                    <input type="password" name="password" placeholder="Password" />
+                    <input type="text" name="name" placeholder="Name" required/>
+                    <input type="text" name="referal" placeholder="Referal" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="password" name="password" placeholder="Password" required/>
                     <button type="submit" name="submit">Sign Up</button>
                 </form>
             </div>
@@ -33,8 +33,8 @@ include('partials/connection.php');
                 <form action="partials/login_handler.php" method="POST">
                     <h1>Sign in</h1>
                     <span>or use your account</span>
-                    <input type="email" name="email" placeholder="Email" />
-                    <input type="password" name="password" placeholder="Password" />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="password" name="password" placeholder="Password" required/>
                     <a href="#">Forgot your password?</a>
                     <button type="submit">Sign In</button>
                 </form>
