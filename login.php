@@ -12,7 +12,7 @@ include('partials/connection.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Login</title>
     <link rel="stylesheet" href="../Inspire-website/assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="../Inspire-Website/assets/css/login-style.css">
+    <link rel="stylesheet" href="assets\css\login-style.css">
     <script type="text/javascript">
         window.history.forward();
         function noBack() {
