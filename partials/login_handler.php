@@ -1,5 +1,4 @@
 <?php 
-
 $showError= "false";
 if($_SERVER["REQUEST_METHOD"]== "POST"){
 
@@ -17,16 +16,16 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 
         $row = mysqli_fetch_assoc($result);
 
-        if($pass == $row['password'])
-
-        // if(password_verify($pass, $row['password']))
+        // if($pass == $row['password'])
+        $strpass = $row['password'];
+        $passcheck = password_verify($pass,$strpass);
+        if($passcheck)
         {
-
             session_start();
 
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $email;
-           
+
             header('Location: ../index.php');
 
 
@@ -34,6 +33,11 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 
         else{
             // $_SESSION['loggedin'] = 2;
+            ?>
+            <script>
+                alert("password incorrect");
+            </script>
+            <?php
             header('Location: ../login.php');
             
         }

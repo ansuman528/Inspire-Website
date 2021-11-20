@@ -10,11 +10,9 @@
         $greferal= $_POST['referal'];
         $name=$_POST['name'];
         $pass= $_POST['password'];
-        $conn = new mysqli($servername, $username, $password, $database);
-            // Check connection
-                if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-                }
+
+        $secpass = password_hash($pass,PASSWORD_BCRYPT); 
+
         if($greferal==$referal)
         {
                 $sql = " SELECT * FROM users where email_id ='$email' ";
@@ -29,9 +27,10 @@
                     ';
                 }
                 else{
-                    $sql = "INSERT INTO users (SL_NO,email_id,password,name)
-                    VALUES (SL_NO, '$email', '$pass', '$name')";
-                    if ($conn->query($sql) === TRUE) {
+                    $sql = "INSERT INTO users (email_id,password,name)
+                    VALUES ('$email', '$secpass', '$name')";
+                    $res = mysqli_query($conn,$sql);
+                    if ($res) {
                         echo '
                         <script>
                         alert("You are successfully registered");
