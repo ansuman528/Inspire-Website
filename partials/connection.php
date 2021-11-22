@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username ="root";
 $password="";
-$database ="abcd";
+$database ="ansuman";
 
 $conn=mysqli_connect($servername,$username,$password,$database);
 
