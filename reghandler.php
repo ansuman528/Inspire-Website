@@ -28,8 +28,7 @@
                     ';
                 }
                 else{
-                    $sql = "INSERT INTO users (SL_NO,email_id,password,name)
-                    VALUES (SL_NO, '$email', '$secpass', '$name')";
+                    $sql = "INSERT INTO users (SL_NO,email_id,password,name) VALUES (NULL, '$email', '$secpass', '$name')";
                     $res = mysqli_query($conn,$sql);
                     if ($res) {
                         echo '
