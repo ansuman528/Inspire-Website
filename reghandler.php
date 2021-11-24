@@ -2,7 +2,8 @@
 <meta http-equiv="refresh" content="5; URL=../login.php" />
 </head>
 <?php
-    include ('partials\connection.php');
+    include ('connection.php');
+
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $referal="ayushanitr";
