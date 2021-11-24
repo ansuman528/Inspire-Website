@@ -29,7 +29,7 @@
                     ';
                 }
                 else{
-                    $sql = "INSERT INTO users(email_id,password,Name) VALUES('$email', '$secpass', '$name')";
+                    $sql = "INSERT INTO users(email_id, password, Name) VALUES('$email', '$secpass', '$name')";
                     $res = mysqli_query($conn,$sql);
                     if ($res) {
                         echo '
