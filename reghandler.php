@@ -1,5 +1,5 @@
 <head>
-<meta http-equiv="refresh" content="5; URL=../inspire-website/login.php" />
+<meta http-equiv="refresh" content="5; URL=../login.php" />
 </head>
 <?php
     include ('partials\connection.php');
@@ -27,8 +27,8 @@
                     ';
                 }
                 else{
-                    $sql = "INSERT INTO users (email_id,password,name)
-                    VALUES ('$email', '$secpass', '$name')";
+                    $sql = "INSERT INTO users (SL_NO,email_id,password,name)
+                    VALUES ('SL_NO','$email', '$secpass', '$name')";
                     $res = mysqli_query($conn,$sql);
                     if ($res) {
                         echo '
