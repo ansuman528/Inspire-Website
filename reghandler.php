@@ -1,11 +1,11 @@
 <head>
 <meta http-equiv="refresh" content="5; URL=../login.php" />
 </head>
+<body>
 <?php
-    include ('connection.php');
-
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
+        include ('connection.php');
         $referal="ayushanitr";
         $email= $_POST['email'];
         $greferal= $_POST['referal'];
@@ -58,3 +58,4 @@
 <br>
 <span style="font-size: 2em;">Don't Refresh. redirecting to login in 5sec</span><br>
 <span>not redirect. click here</span><a href="login.php">login</a><br>
+</body>
